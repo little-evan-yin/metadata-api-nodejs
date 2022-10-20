@@ -4,7 +4,7 @@ const moment = require('moment')
 const { HOST } = require('./src/constants')
 const db = require('./src/database')
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 13308
 
 const app = express()
   .set('port', PORT)
@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/api/token/:token_id', function(req, res) {
-  const tokenId = parseInt(req.params.token_id).toString()
+  const tokenId = req.params.token_id
   const person = db[tokenId]
   const bdayParts = person.birthday.split(' ')
   const day = parseInt(bdayParts[1])
