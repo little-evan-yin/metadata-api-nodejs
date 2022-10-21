@@ -15,7 +15,7 @@ module.exports = {
     "name": "Quiero Pancakes",
     "birthday": "03-04"
   },
-  "5": {
+  "0xedeec68103c5a23f7b9bfa6844bd2435f912479000000000000002000000000a": {
     "name": "Guino the Penguin",
     "birthday": "03-09"
   }
